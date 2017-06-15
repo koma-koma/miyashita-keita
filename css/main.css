@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+  animation: fadeIn 2s ease 0s 1 normal;
+}
+
+.fadeOut {
+  opacity: 0;
+  animation: fadeOut 1s ease 0s 1 normal;
+}
+
+@keyframes fadeIn { /*「fadeIn」と名前をそろえる*/
+    0% {opacity: 0} /*アニメーション開始時は完全に透過*/
+    100% {opacity: 1} /*アニメーション終了時は透過しない*/
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes fadeOut { /*「fadeIn」と名前をそろえる*/
+    0% {opacity: 1} /*アニメーション開始時は完全に透過*/
+    100% {opacity: 0} /*アニメーション終了時は透過しない*/
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+body {
+  text-decoration: none;
+  font-family:Avenir , "Open Sans" , "游ゴシック","Helvetica Neue" , Helvetica , Arial , Verdana , Roboto  , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  width:100vw;
+  height: 100%;
+  /*background-image: url(../img/background.png);*/
+  background-color: #EFF5FF;
+  background-origin: content-box;
+  background-position: center;
+}
+
+/*-----header-----*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  justify-content: center;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+header #title {
+  position: absolute;
+  left: 0;
+  padding: 28px;
+}
+
+header h1, header h2 {
+  color: #5C6A70;
+  margin: 0 0;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+header h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+header .menu {
+  position: absolute;
+  right: 80px;
+  width: 480px;
+  transition: all 300ms 0s ease;
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #5C6A70;
+  padding: 22px 0 18px;
+
+  margin:  0 -3px;
+  width: 120px;
+  height: 20px;
+  z-index: 200;
+  transition: all 300ms 0s ease;
+}
+/*
+a:before{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  display: block;
+  width: 120px;
+  height: 0;
+  background: #EFF5FF;
+  opacity: 0;
+  z-index: 11;
+  transition: 200ms 0s ease;
+}*/
+
+/*a:hover:before{
+  height: 100%;
+  opacity: 1;
+}*/
+
+header a:hover {
+  /*opacity: .8;*/
+  background-color: #EFF5FF
+}
+
+.menu .here {
+  background-color: #EFF5FF
+}
+
+/*-----main-----*/
+
+main {
+  position: relative;
+  width: 100%;
+  top: 60px;
+}
+
+/*-----firstview-----*/
+
+#koma {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+#firstview {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/*-----about-----*/
+
+#about {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .6);
+  justify-content: center;
+  z-index: 100;
+}
+
+.content-box {
+  position: relative;
+  max-width: 1000px;
+  width: 60%;
+  /*min-width: 800px;*/
+  margin-left: 25%;
+  padding: 120px 0 60px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+#about h1, #about h2, #about h3, #about p {
+  color: #5C6A70;
+}
+
+#about h1 {
+  position: absolute;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+  left: -140px;
+  text-align: right;
+}
+
+#about h2 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 1px 0 8px;
+}
+
+#about h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#about .profile h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin: 1px 0 15px;
+}
+
+#about .profile h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+#about-left {
+  float: left;
+  /*max-width: 420px;*/
+  width: 45%;
+}
+
+#about-right {
+  float: right;
+  margin-top: 80px;
+  /*max-width: 420px;*/
+  width: 45%;
+}
+
+#about .container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#about  .profile {
+  width: 80%;
+}
+
+#about .container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -22px;
+  background: #5C6A70;
+  width: 3px;
+  height: 100%;
+}
+
+/*-----works-----*/
+
+#works {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .9);
+  justify-content: center;
+  z-index: 100;
+}
+
+#works .works-menu {
+  text-align: right;
+  position: absolute;
+  left: -140px;
+}
+
+#works .content-box {
+  width: 65%;
+}
+
+#works h1 {
+  color: #5C6A70;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+#works .category {
+  color: #5C6A70;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#works .category li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+#works .container {
+  position: relative;
+}
+
+#works .item {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  text-align: center;
+}
+
+#works .itemdiv {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  text-align: center;
+  padding-top: 80px;
+}
+
+#works .itemdiv h1 {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+#works .item a {
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 1;
+  transition: all 300ms 0s ease;
+}
+
+#works .item a:hover {
+  opacity: .05;
+  transition: all 300ms 0s ease;
+}
+
+/*-----footer-----*/
+
+footer {
+  /*bottom: 0;*/
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
