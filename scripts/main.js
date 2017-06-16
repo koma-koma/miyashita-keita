@@ -11,20 +11,47 @@
 //   });
 // });
 
-$(function(){
+
+
+$(function() {
+  var hash = location.hash;
+
+  $('.menu > a').removeClass('here');
+  $(this).addClass('here');
+
+  $('main > div[id!=koma]').addClass('invisible');
+  $('main > div[class*=now]').removeClass('fadeIn now').fadeOut();
+  $(hash).removeClass('invisible').removeClass('fadeOut').addClass('now').fadeIn();
+
   $('a[href^=#]').click(function(){
     var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-
     $('.menu > a').removeClass('here');
     $(this).addClass('here');
 
     $('main > div[id!=koma]').addClass('invisible');
     $('main > div[class*=now]').removeClass('fadeIn now').fadeOut();
     $(href).removeClass('invisible').removeClass('fadeOut').addClass('now').fadeIn();
-    return false;
   });
+
 });
+
+
+
+// $(function() {
+//
+//     var urlHash = location.hash;
+//     if (urlHash) {
+//       alert.('test');
+//
+//       $('.menu > a').removeClass('here');
+//       $(this).addClass('here');
+//
+//       $('main > div[id!=koma]').addClass('invisible');
+//       $('main > div[class*=now]').removeClass('fadeIn now').fadeOut();
+//       $(urlHash).removeClass('invisible').removeClass('fadeOut').addClass('now').fadeIn();
+//     }
+//
+// });
 
 // スクロール値でメニューの色変えたい
 // $(function() {
