@@ -44,6 +44,11 @@ body {
   background-position: center;
 }
 
+a:link { color:#5C6A70; text-decoration:none; }
+a:visited { color:#5C6A70; text-decoration:none; }
+a:hover { color:#5C6A70; text-decoration:none; opacity: .8;}
+a:active { color:#5C6A70; text-decoration:none; }
+
 /*-----header-----*/
 
 header {
@@ -153,12 +158,15 @@ main {
 /*-----about-----*/
 
 #about {
+  color: #5C6A70;
   position: relative;
   margin: 0;
   width: 100%;
+  height: 100vh;
   background: rgba(255, 255, 255, .6);
   justify-content: center;
   z-index: 100;
+  overflow-y: scroll;
 }
 
 .content-box {
@@ -179,10 +187,6 @@ main {
 }
 
 .clearfix {display: inline-table;}
-
-#about h1, #about h2, #about h3, #about p {
-  color: #5C6A70;
-}
 
 #about h1 {
   position: absolute;
@@ -219,10 +223,9 @@ main {
   margin-bottom: 15px;
 }
 
-#about p {
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin-top: 15px;
+#about .sns {
+  font-size: 32px;
+  letter-spacing: 5px;
 }
 
 #about-left {
@@ -233,7 +236,7 @@ main {
 
 #about-right {
   float: right;
-  margin-top: 80px;
+  /*margin-top: 80px;*/
   /*max-width: 420px;*/
   width: 45%;
 }
@@ -241,7 +244,7 @@ main {
 #about .container {
   position: relative;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 #about  .profile {
@@ -264,9 +267,11 @@ main {
   position: relative;
   margin: 0;
   width: 100%;
+  height: 100vh;
   background: rgba(255, 255, 255, .9);
   justify-content: center;
   z-index: 100;
+  overflow-y: scroll;
 }
 
 #works .works-menu {
@@ -339,12 +344,47 @@ main {
   transition: all 300ms 0s ease;
 }
 
+/*-----contact-----*/
+
+#contact {
+  color: #5C6A70;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, .5);
+  justify-content: center;
+  z-index: 100;
+}
+
+#contact h1 {
+  position: absolute;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+  left: -140px;
+  text-align: right;
+}
+
+#contact a {
+  font-size: 72px;
+  letter-spacing: 50px;
+}
+
+#contact .container {
+  position: relative;
+  width: 100%;
+  padding-left: 50px;
+
+}
 /*-----footer-----*/
 
 footer {
   /*bottom: 0;*/
-  margin-top: 100px;
+  margin-top: 60px;
+  padding-top: 40px;
   width: 100%;
-  height: 500px;
+  height: 60px;
   text-align: center;
+  background: #ffffff;
 }
