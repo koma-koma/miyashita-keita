@@ -10,6 +10,7 @@
 
 .fadeOut {
   opacity: 0;
+  display: none;
   animation: fadeOut 1s ease 0s 1 normal;
 }
 
@@ -33,11 +34,12 @@
     100% {opacity: 0}
 }
 
+
 body {
   text-decoration: none;
   font-family:Avenir , "Open Sans" , "游ゴシック","Helvetica Neue" , Helvetica , Arial , Verdana , Roboto  , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
   width:100vw;
-  height: 100%;
+  height: 100vh;
   /*background-image: url(../img/background.png);*/
   background-color: #EFF5FF;
   background-origin: content-box;
@@ -55,7 +57,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 0;
   z-index: 10;
   justify-content: center;
   background: #ffffff;
@@ -97,7 +99,6 @@ header a {
   text-align: center;
   color: #5C6A70;
   padding: 22px 0 18px;
-
   margin:  0 -3px;
   width: 120px;
   height: 20px;
@@ -137,8 +138,12 @@ header a:hover {
 main {
   position: relative;
   width: 100%;
-  top: 60px;
+  top: 0;
 }
+
+/*.invisible {
+  display: none;
+}*/
 
 /*-----firstview-----*/
 
@@ -150,7 +155,7 @@ main {
 }
 
 #firstview {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100vh;
 }
@@ -159,7 +164,8 @@ main {
 
 #about {
   color: #5C6A70;
-  position: relative;
+  position: absolute;
+  top: 60px;
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -167,6 +173,7 @@ main {
   justify-content: center;
   z-index: 100;
   overflow-y: scroll;
+  display: none;
 }
 
 .content-box {
@@ -175,7 +182,7 @@ main {
   width: 60%;
   /*min-width: 800px;*/
   margin-left: 25%;
-  padding: 120px 0 60px;
+  padding: 150px 0 60px;
 }
 
 .clearfix:after {
@@ -264,7 +271,8 @@ main {
 /*-----works-----*/
 
 #works {
-  position: relative;
+  position: absolute;
+  top: 60px;
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -272,6 +280,7 @@ main {
   justify-content: center;
   z-index: 100;
   overflow-y: scroll;
+  display: none;
 }
 
 #works .works-menu {
@@ -348,13 +357,15 @@ main {
 
 #contact {
   color: #5C6A70;
-  position: relative;
+  position: absolute;
+  top: 60px;
   margin: 0;
   width: 100%;
   height: 100vh;
   background: rgba(255, 255, 255, .5);
   justify-content: center;
   z-index: 100;
+  display: none;
 }
 
 #contact h1 {
@@ -381,10 +392,11 @@ main {
 
 footer {
   /*bottom: 0;*/
-  margin-top: 60px;
-  padding-top: 40px;
+  margin-top: -60px;
+  padding-top: 0;
   width: 100%;
   height: 60px;
   text-align: center;
   background: #ffffff;
+  z-index: 200;
 }
