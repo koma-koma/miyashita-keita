@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?y6by4l');
+  src:  url('../fonts/icomoon.eot?y6by4l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?y6by4l') format('truetype'),
+    url('../fonts/icomoon.woff?y6by4l') format('woff'),
+    url('../fonts/icomoon.svg?y6by4l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-pureData:before {
+  content: "\e900";
+}
+.icomoon-arduino:before {
+  content: "\e901";
+}
+.icomoon-processing:before {
+  content: "\e902";
+}
+.icomoon-openframeworks:before {
+  content: "\e903";
+}
