@@ -61,7 +61,12 @@ body {
 
 #work p {
   letter-spacing: 1px;
-  margin: 4px auto;
+  margin: 4px auto 30px;
+}
+
+.info{
+  font-style: italic;
+  opacity: .8;
 }
 
 .container {
