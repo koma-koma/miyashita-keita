@@ -39,11 +39,15 @@ body {
 }
 
 #circles {
-  background-image: url("../work/img/work.png");
+  background-image: url("../work/circles/img/mainImage.png");
 }
 
 #calender {
-  background-image: url("../work/img/calender.png");
+  background-image: url("../work/calender/img/mainImage.png");
+}
+
+#still {
+  background-image: url("../work/stillsounds/img/mainImage.png");
 }
 
 #work .content-box {
