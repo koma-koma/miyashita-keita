@@ -50,6 +50,10 @@ body {
   background-image: url("../work/stillsounds/img/mainImage.png");
 }
 
+#entracte {
+  background-image: url("../work/entracte/img/mainImage.png");
+}
+
 #work .content-box {
   background: #ffffff;
   position: relative;

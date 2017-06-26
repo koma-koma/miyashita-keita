@@ -69,6 +69,11 @@
 
 #about li {
   margin-top: 5px;
+  display: inline;
+}
+
+#about li:not(:last-child):after {
+  content: ' / '
 }
 
 #about .profile h2 {
