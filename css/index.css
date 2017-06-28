@@ -213,14 +213,35 @@
 }
 
 #contact h1 {
-  left: -140px;
+  position: absolute;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+  left: -180px;
   text-align: right;
+}
+
+#contact .icon {
+  font-size: 32px;
+  letter-spacing: 5px;
 }
 
 #contact .container {
   position: relative;
   width: 100%;
-  padding-left: 50px;
+  margin-bottom: 40px;
 
+  flex: 1 1 30%;
+  margin-right: 50px;
+}
+
+#contact .container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -22px;
+  background: #5C6A70;
+  width: 3px;
+  height: 100%;
 }
 /*-----footer-----*/
