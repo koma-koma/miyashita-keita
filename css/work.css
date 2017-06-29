@@ -9,12 +9,12 @@ body {
 
 @keyframes expand { /*「fadeIn」と名前をそろえる*/
     0% {height: 0} /*アニメーション開始時は完全に透過*/
-    100% {height: 40vh} /*アニメーション終了時は透過しない*/
+    100% {height: 30vh} /*アニメーション終了時は透過しない*/
 }
 
 @-webkit-keyframes expand {
   0% {height: 0} /*アニメーション開始時は完全に透過*/
-  100% {height: 40vh} /*アニメーション終了時は透過しない*/
+  100% {height: 30vh} /*アニメーション終了時は透過しない*/
 }
 
 
@@ -32,7 +32,7 @@ body {
 
 .mainImage {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   margin-top: 60px;
   background-size: cover;
   background-position: center;
@@ -42,8 +42,8 @@ body {
   background-image: url("../work/circles/img/mainImage.png");
 }
 
-#calender {
-  background-image: url("../work/calender/img/mainImage.png");
+#calendar {
+  background-image: url("../work/calendar/img/mainImage.png");
 }
 
 #still {
@@ -52,6 +52,12 @@ body {
 
 #entracte {
   background-image: url("../work/entracte/img/mainImage.png");
+}
+#azimuth {
+  background-image: url("../work/azimuth/img/mainImage.png");
+}
+#book {
+  background-image: url("../work/book/img/mainImage.png");
 }
 
 #work .content-box {
@@ -97,9 +103,8 @@ body {
 #work-image {
   text-align: center;
 }
-
 #work-image img {
-  display: block;
+  display: inline-block;
   width: 90%;
   height: auto;
   margin: 5px auto;

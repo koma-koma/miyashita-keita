@@ -186,7 +186,7 @@
 #works .item {
   margin-right: 15px;
   margin-bottom: 15px;
-  background: #ffffff;
+  /*background: #ffffff;*/
   overflow: hidden;
 }
 
